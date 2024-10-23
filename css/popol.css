@@ -26,10 +26,14 @@ body {
     overflow: hidden;
 }
 
-video {
-    object-fit: cover;
-    overflow-clip-margin: none;
+.movie {
+    max-width: 100%;
+    height: 100vh;
     overflow: hidden;
+}
+.movie video {
+    width: 100%;
+    max-width: 100%;
 }
 
 /* gnb */
@@ -61,7 +65,9 @@ header .gnb {
 .right_gnb li a {
     position: relative;
     display: block;
-    font-size: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Pretendard Variable";
     color: #fff;
     transition: all 0.5s;
 
@@ -136,9 +142,9 @@ header .gnb {
     top: 0;
     left: 6%;
     font-size: 100px;
-    color: #f3e51d;
+    color: #fff;
     border-right: 5px solid black;
-    width: 23ch;
+    width: 24.5ch;
     white-space: nowrap;
     overflow: hidden;
     animation: typing 3s steps(10, end),
@@ -175,7 +181,7 @@ header .gnb {
 }
 
 .itdt_left .rotate .normal img {
-    width: 600px;
+    height: 600px;
 }
 
 .itdt_left .rotate .normal.front {
@@ -209,61 +215,120 @@ header .gnb {
 }
 
 .contents .itdt_right .about_me li {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
-.contents .itdt_right .about_me li a {
+.contents .itdt_right .about_me li span {
     width: 300px;
     display: block;
-    font-size: 40px;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Pretendard Variable";
     color: #ccc;
     margin-bottom: 30px;
 
 }
 
 .contents .itdt_right .about_me li p {
-    font-size: 28px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Pretendard Variable";
     color: #fff;
     line-height: 1.8;
 }
 
-.contents .itdt_right .about_me li p img {
-    width: 50px;
+.about_me li p img {
+    width: 30px;
 }
-
+.about_me li .scroll_skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.about_me li .scroll_skill li {
+    margin-right: 15px;
+}
+.about_me li .scroll_skill li:last-child {
+    width: 100%;
+}
+.about_me li .scroll_skill li:last-child a {
+    display: block;
+    width: 120px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Pretendard Variable";
+    color: #000;
+    text-align: center;
+}
+.about_me li .scroll_skill li img {
+    width: 30px;
+}
 /* porpolio */
-.contents #popor {
+.contents #popol {
     max-width: 100%;
     height: 100vh;
     padding: 10px 0;
 }
 
-#popor .designTop {
+#popol .designTop {
     margin-bottom: 100px;
 }
 
-#popor .designTop>ul {
+#popol .designTop>ul {
     display: flex;
     justify-content: center;
     align-items: center;
     /*  gap: 100px; */
 }
 
-#popor .designTop>ul>li {
-    position: relative;
+#popol .designTop>ul>li {
     width: calc(70% / 8);
     perspective: 3000px;
 
 
 }
 
-#popor .designTop>ul>li a {
+#popol .designTop>ul>li a {
+    position: relative;
     width: 240px;
     height: 200px;
     display: block;
     box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.774);
 }
+#popol .designTop>ul>li a::after {
+    width: 240px;
+    height: 200px;
+    content: "Click";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    text-align: center;
+    line-height: 5.5;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.774);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
 
+#popol .designTop>ul>li a:hover::after {
+    opacity: 1;
+}
+
+#popol .designTop>ul>li a:hover {
+    background-color: rgba(0, 0, 0, 0.774);
+}
+#popol .designTop>ul>li a:hover {
+    width: 240px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.774);
+}
 .designTop>ul>li:first-child a {
     transform: skewY(15deg) rotateY(-45deg);
     background: url(../img/나만의\ 카드\ 만들기.png)no-repeat top / cover;
@@ -288,7 +353,7 @@ header .gnb {
 
 .designTop>ul>li:nth-child(5) a {
     transform: skewY(15deg) rotateY(-45deg);
-    background: url(../img/카드ui레이아웃.png)no-repeat center / cover;
+    background: url(../img/LOOVERID.png)no-repeat center / cover;
 }
 
 .designTop>ul>li:nth-child(6) a {
@@ -303,35 +368,65 @@ header .gnb {
 
 .designTop>ul>li:nth-child(8) a {
     transform: skewY(-15deg) rotateY(45deg);
-    background: url(../img/환경포스커.png)no-repeat top / cover;
+    background: url(../img/MUSICBOX.png)no-repeat top / cover;
 }
 
-#popor .designBottom {
+#popol .designBottom {
     margin-bottom: 90px;
 }
 
-#popor .designBottom>ul {
+#popol .designBottom>ul {
     display: flex;
     justify-content: center;
     align-items: center;
     /*  gap: 100px; */
 }
 
-#popor .designBottom>ul>li {
-    position: relative;
+#popol .designBottom>ul>li {
+   
     width: calc(70% / 8);
     perspective: 3000px;
 
 
 }
 
-#popor .designBottom>ul>li a {
+#popol .designBottom>ul>li a {
+    position: relative;
     width: 240px;
     height: 200px;
     display: block;
     box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.774);
 }
 
+#popol .designBottom>ul>li a::after {
+    width: 240px;
+    height: 200px;
+    content: "Click";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    text-align: center;
+    line-height: 5.5;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.774);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#popol .designBottom>ul>li a:hover::after {
+    opacity: 1;
+}
+
+#popol .designBottom>ul>li a:hover {
+    background-color: rgba(0, 0, 0, 0.774);
+}
+#popol .designBottom>ul>li a:hover {
+    width: 240px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.774);
+}
 .designBottom>ul>li:first-child a {
     transform: skewY(15deg) rotateY(-45deg);
     width: 240px;
@@ -368,12 +463,12 @@ header .gnb {
 
 .designBottom>ul>li:nth-child(7) a {
     transform: skewY(15deg) rotateY(-45deg);
-    background: url(../img/내가만듬/종이효과.png)no-repeat left / cover;
+    background: url(../img/종이효과.png)no-repeat left / cover;
 }
 
 .designBottom>ul>li:nth-child(8) a {
     transform: skewY(-15deg) rotateY(45deg);
-    background: url(../img/내가만듬/환상적\ 아트워크.png)no-repeat center / cover;
+    background: url(../img/환상적\ 아트워크.png)no-repeat center / cover;
 }
 
 .loop:first-child {
@@ -422,9 +517,7 @@ header .gnb {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     text-align: center;
-    padding: 20px;
     transition: all 0.3s ease;
 
 }
@@ -432,118 +525,167 @@ header .gnb {
 
 .first_web {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 70%;
-    height: 50%;
-    font-size: 60px;
-    /*  font-family: "Pretendard Variable"; */
-    margin-bottom: 10px;
-    cursor: pointer;
-    /*  background: #fff; */
-    border: 3px solid #fff;
-    color: #000;
-    border-radius: 1px;
+    width: 90%;
+    height: 60vh;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #33373b;
+   /*  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    max-width: 100%;
+}
+.view_all {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+}
+.view_web {
+    width: 40%;
+    margin-bottom: 20px;
     text-align: left;
 }
 
-.first_web .view_web h3 {
-    font-size: 70px;
-    color: #fff;
-    margin: 10px 0 40px 0;
-}
-
-.first_web .view_web .makeLogo {
+.view_web h3 {
     font-size: 50px;
     color: #fff;
-    margin-bottom: 25px;
+    font-family: "Pretendard Variable";
+    font-weight: 600;
+    margin-bottom: 50px;
 }
 
-.first_web .view_web .makeLogo img:nth-child(2) {
-    width: 120px;
-    height: 50px;
+.view_web p {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Pretendard Variable";
+    color: #f0f0f0;
+    margin-bottom: 30px;
+    line-height: 1.6;
 }
-
-.first_web .view_web .makeLogo img:nth-child(3) {
-    width: 50px;
-    height: 50px;
-}
-
-.first_web .view_web .makeLogo img:nth-child(4) {
-    width: 120px;
-    height: 50px;
-}
-
-.first_web .view_web .makeLogo img:nth-child(5) {
-    width: 50px;
-    height: 50px;
-}
-
-.first_web .view_web .types {
-    font-size: 45px;
-    margin-bottom: 25px;
+.explanation {
+    font-size: 18px;
+    font-weight: 400;
     color: #fff;
 }
-
-.first_web .view_web .types span {
-    margin-left: 10px;
-}
-
-.first_web .view_web .tools {
-    font-size: 45px;
+.makeLogo span {
+    font-size: 18px;
+    font-weight: 400;
     color: #fff;
+    margin-right: 10px;
 }
 
-.first_web .view_web .tools span img {
-    width: 40px;
-    height: 40px;
+.makeLogo img {
+    margin: 5px;
+    max-width: 50px;
 }
 
-.first_web .view_web span img:first-child {
-    width: 30px;
-    height: 50px;
+.types span {
+    margin-right: 10px;
+}
+.tools span {
+    margin-right: 10px;
+}
+.tools img {
+    margin: 5px;
+    max-width: 30px;
 }
 
-.first_web .view_web span img:nth-child(2) {
-    width: 30px;
-    height: 50px;
+.tools img:nth-child(2) {
+    width: 20px;
 }
-
-.first_web .view_web span img:nth-child(3) {
-    width: 30px;
-    height: 50px;
+.tools img:nth-child(3) {
+    width: 20px;
 }
-
-.first_web a {
-    display: block;
-
+.tools img:nth-child(4) {
+    width: 20px;
+}
+.tools img:nth-child(5) {
+    width: 25px;
 }
 
 
 .subFirst_web {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 50%;
-    max-height: 200px;
-    overflow: hidden;
-    gap: 10px;
-    transition: max-height 0.8s ease;
+    text-align: center;
+    margin-top: 20px;
 }
 
-.subFirst_web a {
-    display: inline-block;
-    width: 100%;
+.subFirst_web ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.subFirst_web ul li {
+    margin: 10px;
+}
+
+.subFirst_web ul li a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Pretendard Variable";
+    color: #111;
     text-decoration: none;
-    font-size: 45px;
-    color: #fff;
-    background-color: #FF170C;
-    border-radius: 50px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
 
-.subFirst_web a:hover {
-    text-decoration: underline;
+.subFirst_web ul li a:hover {
+    background-color: #c7c7c7;
 }
+
+.down:hover .sub_down {
+    display: block;
+}
+
+.sub_down {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.sub_down li {
+    margin: 5px 0;
+}
+
+.sub_down li a {
+    padding: 5px 15px;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.sub_down li a:hover {
+    background-color: #ddd;
+}
+.view_left {
+    position: relative;
+}
+.view_left img:first-child {
+    width: 450px;
+}
+.view_left img:nth-child(2) {
+    width: 100px;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
 
 /* TeamWork */
 #TeamWork {
@@ -553,40 +695,89 @@ header .gnb {
     width: 100%;
     height: 100vh;
 }
-
+.team_left {
+    font-family: "Pretendard Variable";
+}
 #TeamWork .team_left .team_name {
-    font-size: 45px;
+    font-size: 35px;
+    font-weight: 500;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 #TeamWork .team_left .project {
-    font-size: 45px;
+    font-size: 25px;
+    font-weight: 500;
     color: #fff;
     margin-bottom: 20px;
 }
-
+.explanation {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
 #TeamWork .team_left .tools {
-    font-size: 45px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
     color: #fff;
+    text-align: left;
     margin-bottom: 20px;
 }
-
-#TeamWork .team_left .tools span img {
-    width: 50px;
-    height: 50px;
+#TeamWork .team_left .colors {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 40px;
+}
+#TeamWork .team_left .colors span {
+    margin-right: 10px;
+}
+#TeamWork .team_left .colors .cercle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #B62625;
+}
+#TeamWork .team_left .colors .cercle01 {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #3325B6;
+}
+#TeamWork .team_left .colors .cercle02 {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #9BCE5B;
+}
+#TeamWork .team_left .tools > img {
+    width: 40px;
 }
 
 #TeamWork .team_left .addView {
     position: relative;
-    font-size: 35px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Pretendard Variable";
     color: #fff;
 }
 
 #TeamWork .team_left .addView a {
+    width: 400px;
     display: block;
     text-align: center;
     background-color: #6ea5ca;
+    padding: 10px;
     border-radius: 50px;
     margin-bottom: 20px;
 }
@@ -637,8 +828,8 @@ header .gnb {
     position: absolute;
     top: -20%;
     left: -25%;
-    width: 80px;
-    height: 100px;
+    width: 65px;
+    height: 70px;
     animation: cursor 1s infinite linear alternate;
 }
 
@@ -657,6 +848,7 @@ header .gnb {
     position: relative;
     min-height: 100vh;
     overflow: hidden;
+    font-family: "Pretendard Variable";
 }
 
 .ani {
@@ -679,13 +871,12 @@ header .gnb {
     font-size: 2rem;
     text-align: center;
     background-color: #f3e51d;
-
     opacity: 75%;
-    padding: 2px;
+    padding: 10px;
     margin: 2px 0;
     background-image:
-        linear-gradient(90deg, black 40%, transparent 60%),
-        linear-gradient(90deg, black 40%, transparent 50%);
+        linear-gradient(90deg, #111 40%, transparent 60%),
+        linear-gradient(90deg, #111 40%, transparent 50%);
     background-size: 80px 15px;
     background-position: top, bottom;
     background-repeat: repeat-x;
@@ -696,7 +887,8 @@ header .gnb {
 
 .inner .police-line>p {
     font-size: 100px;
-    color: #000000;
+    font-weight: 600;
+    color: #111;
     opacity: 100%;
     animation: inner 60s linear infinite alternate;
 
@@ -740,11 +932,11 @@ header .gnb {
     text-align: center;
     background-color: #f3e51d;
 
-    padding: 2px;
+    padding: 10px;
     margin: 2px 0;
     background-image:
-        linear-gradient(90deg, black 40%, transparent 60%),
-        linear-gradient(90deg, black 40%, transparent 50%);
+        linear-gradient(90deg, #111 40%, transparent 60%),
+        linear-gradient(90deg, #111 40%, transparent 50%);
     background-size: 80px 15px;
     background-position: top, bottom;
     background-repeat: repeat-x;
@@ -755,7 +947,8 @@ header .gnb {
 
 .inner01 .police-line01>p {
     font-size: 100px;
-    color: #000000;
+    font-weight: 600;
+    color: #111;
     opacity: 100%;
     animation: inner01 60s linear infinite alternate;
 
@@ -794,11 +987,11 @@ header .gnb {
     text-align: center;
     background-color: #f3e51d;
 
-    padding: 2px;
+    padding: 10px;
     margin: 2px 0;
     background-image:
-        linear-gradient(90deg, black 40%, transparent 60%),
-        linear-gradient(90deg, black 40%, transparent 50%);
+        linear-gradient(90deg, #111 40%, transparent 60%),
+        linear-gradient(90deg, #111 40%, transparent 50%);
     background-size: 80px 15px;
     background-position: top, bottom;
     background-repeat: repeat-x;
@@ -809,9 +1002,10 @@ header .gnb {
 
 .inner02 .police-line02>p {
     font-size: 100px;
-    color: #000000;
+    font-weight: 600;
+    color: #111;
     opacity: 100%;
-    animation: inner02 60s linear infinite alternate;
+    animation: inner02 60s linear infinite;
 
 }
 
@@ -822,8 +1016,8 @@ header .gnb {
     }
 
     100% {
-        -webkit-transform: translate3d(100%, 0, 0);
-        transform: translate3d(100%, 0, 0);
+        -webkit-transform: translate3d(40%, 0, 0);
+        transform: translate3d(40%, 0, 0);
     }
 }
 
@@ -850,11 +1044,11 @@ header .gnb {
     text-align: center;
     background-color: #f3e51d;
 
-    padding: 2px;
+    padding: 10px 5px;
     margin: 2px 0;
     background-image:
-        linear-gradient(90deg, black 40%, transparent 60%),
-        linear-gradient(90deg, black 40%, transparent 50%);
+        linear-gradient(90deg, #111 40%, transparent 60%),
+        linear-gradient(90deg, #111 40%, transparent 50%);
     background-size: 80px 15px;
     background-position: top, bottom;
     background-repeat: repeat-x;
@@ -865,9 +1059,11 @@ header .gnb {
 
 .inner03 .police-line03>p {
     font-size: 100px;
-    color: #000000;
+    font-weight: 600;
+    color: #111;
     opacity: 100%;
-    animation: inner03 60s linear infinite alternate;
+    animation: inner03 60s linear infinite;
+   
 
 }
 
@@ -878,7 +1074,7 @@ header .gnb {
     }
 
     100% {
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
     }
 }

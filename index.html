@@ -13,10 +13,10 @@
 
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/popol.css">
-    <link rel="stylesheet" href="css/all.min.css">
+
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
@@ -28,13 +28,16 @@
 <body>
     <div id="wrap">
         <header class="contents">
-            <video class="video" src="video/신호등.mp4" alts="video" width="100%" height="100%" autoplay playsinline loop
-                muted=""></video>
+            <div class="movie">
+                <video class="video" autoplay playsinline loop muted>
+                    <source src="video/lighter.mp4" type="video/mp4">
+                </video>
+            </div>
             <div class="gnb">
                 <h1 class="left_gnb">Rakan</h1>
                 <ul class="right_gnb">
                     <li><a href="#itdt">About Me</a></li>
-                    <li><a href="#popor">My Porpolio</a></li>
+                    <li><a href="#popol">My Porpolio</a></li>
                     <li><a href="#MyDesign">My Publishing</a></li>
                     <li><a href="#TeamWork">Team Work</a></li>
                     <li><a href="#Contact">Contact</a></li>
@@ -45,8 +48,8 @@
                 <h2 class="myself animate__animated  animate__fadeInLeft">
                     <span>저는</span>
                 </h2>
-                <h2 class="under_bar">&nbsp;명확한 디자인의 방향을 추구</h2>
-                <h2 class="pub animate__animated animate__fadeInLeft">하는 PUBLISHER 입니다.
+                <h2 class="under_bar">&nbsp;잠시 멈추고 생각에 신호를 불어 </h2>
+                <h2 class="pub animate__animated animate__fadeInLeft">넣는 PUBLISHER 입니다.
 
                 </h2>
             </div>
@@ -58,13 +61,13 @@
                 <div class="itdt_left">
                     <div class="rotate">
                         <div class="normal front"><img src="img/선비.png" alt="선비아이콘"></div>
-                        <div class="normal back"><img src="img/왕.png" alt="왕아이콘"></div>
+                        <div class="normal back"><img src="img/왕아이콘.png" alt="왕아이콘"></div>
                     </div>
                 </div>
                 <div class="itdt_right">
                     <ul class="about_me">
                         <li>
-                            <a href="#">Profile</a>
+                            <span>Profile</span>
                             <p>1. Name : 한유석 <br>
                                 2. Age : 2000.02.01(MZ) <br>
                                 3. Home : 서울특별시 강서구 거주 <br>
@@ -72,7 +75,7 @@
                             </p>
                         </li>
                         <li>
-                            <a href="#">Certificate</a>
+                            <span>Certificate</span>
                             <p>
                                 1. 운전면허 : 1종 보통 <br>
                                 2. SMART 서비스경영 3급 <br>
@@ -81,28 +84,52 @@
                             </p>
                         </li>
                         <li>
-                            <a href="#">Eduction</a>
+                            <span>Education</span>
                             <p>1. 관광경영학과 졸업 <br>
                                 2. 호주 MELBOURNE POLYTECHNIC <br>
                                 호텔 경영학과 복수 학위 <br>
                                 3. 말레이시아 THE UNIVERSITY OF <br> NOTTINGHAM 어학연수 <br>
-                                4. MBC아카데미 UIUX 웹 퍼블리셔 교육 수료
+                                4. 엠비씨 컴퓨터아카데미 [(NCS)웹디자인&amp;웹 퍼블리셔 과정(760시간)] 수료
                             </p>
                         </li>
                         <li>
-                            <a href="#">Skill</a>
-                            <p>
-                                <img src="img/HTML.png" alt="">
-                                <img src="img/CSS.png" alt="">
-                                <img src="img/JS.png" alt="">
-                                <img src="img/jquery.png" alt="">
-                                <img src="img/REACT.png" alt=""> <br>
-                                <img src="img/Photoshop_icon.png" alt="">
-                                <img src="img/Illustrator_icon.png" alt="">
-                                <img src="img/Premiere_Pro_icon.png" alt="">
-                                <img src="img/피그마.png" alt="피그마">
-                                <img src="img/github.png" alt="github">
-                            </p>
+                            <span>Skill</span>
+                            <ul class="scroll_skill">
+                                <li>
+                                    <img src="img/HTML.png" alt="HTML">
+                                    
+                                </li>
+                                <li>
+                                    <img src="img/CSS.png" alt="CSS">
+                                </li>
+                                <li>
+                                    <img src="img/JS.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="img/jquery.png" alt="">
+
+                                </li>
+                                <li>
+                                    <img src="img/REACT.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="img/Photoshop_icon.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="img/Illustrator_icon.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="img/Premiere_Pro_icon.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="img/피그마.png" alt="피그마">
+                                </li>
+                                <li>
+                                    <img src="img/github.png" alt="github">
+                                </li>
+                                <li><a href="skill_explanation.html" target="_blank">Skill 설명 보기</a></li>
+
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -110,7 +137,7 @@
         </section>
         <!-- introduction -->
         <section class="contents">
-            <div id="popor">
+            <div id="popol">
                 <div class="loop">
                     <p>DESIGN DESIGN DESIGN DESIGN DESIGN DESIGN DESIGN DESIGN DESIGN DESIGN DESIGN DESIGN DESIGN DESIGN
                     </p>
@@ -125,26 +152,26 @@
                 </div>
                 <div class="designTop" data-aos="zoom-in">
                     <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
+                        <li><a href="popol_design.html" target="_blank"></a></li>
+                        <li><a href="popol_design.html" target="_blank"></a></li>
+                        <li><a href="popol_design.html" target="_blank"></a></li>
+                        <li><a href="popol_design.html" target="_blank"></a></li>
+                        <li><a href="popol_design.html" target="_blank"></a></li>
+                        <li><a href="popol_design.html" target="_blank"></a></li>
+                        <li><a href="popol_design.html" target="_blank"></a></li>
+                        <li><a href="popol_design.html" target="_blank"></a></li>
                     </ul>
                 </div>
                 <div class="designBottom " data-aos="zoom-in">
                     <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
+                        <li><a href="popol_design.html" target="_blank"></a></li>
+                        <li><a href="popol_design.html" target="_blank" ></a></li>
+                        <li><a href="popol_design.html" target="_blank"></a></li>
+                        <li><a href="popol_design.html" target="_blank"></a></li>
+                        <li><a href="popol_design.html" target="_blank"></a></li>
+                        <li><a href="popol_design.html" target="_blank"></a></li>
+                        <li><a href="popol_design.html" target="_blank"></a></li>
+                        <li><a href="popol_design.html" target="_blank"></a></li>
                     </ul>
                 </div>
                 <div class="loop">
@@ -167,61 +194,179 @@
                 <div class="swiper addAccor">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-
                             <div class="first_web">
-                                <div class="view_web">
-                                    <h3>My Publishing : ReDesign</h3>
-                                    <p class="makeLogo">
-                                        <span>My Logo :</span>
-                                        <img src="img/로고제작02.png" alt="">
-                                        <img src="img/로고만듬01.png" alt="">
-                                        <img src="img/로고만듬02.png" alt="">
-                                        <img src="img/로고만듬03.jpg" alt="">
-                                    </p>
-                                    <p class="types">Type :<span>PC, Tablet, Mobile</span></p>
-                                    <p class="tools">Tools :
-                                        <span>
-                                            <img src="img/HTML.png" alt="HTMl">
-                                            <img src="img/CSS.png" alt="css">
-                                            <img src="img/JS.png" alt="js">
-                                            <img src="img/jquery.png" alt="jquery">
-                                            <img src="img/Photoshop_icon.png" alt="photoshop">
+                                <div class="view_all">
+                                    <div class="view_web">
+                                        <h3>My Publishing : ReDesign</h3>
+                                        <p class="explanation">
+                                            기존 "dingo" 사이트에서 사용자가 더 볼 수 있는 영상 컨텐츠와 딩고가 이뤄낸 <br> 성과들을 더 활용하는데 집중했습니다.
+                                        </p>
+                                        <p class="makeLogo">
+                                            <span>My Logo :</span>
+                                            <img src="img/로고제작02.png" alt="">
+                                            <img src="img/로고만듬01.png" alt="">
+
+                                        </p>
+                                        <p class="types"><span>Type :</span>PC(1920px), Tablet(768px), Mobile(430px)</p>
+                                        <p class="tools"><span>Tools :</span>
+
+                                            <img src="img/HTML.png" alt="HTML">
+                                            <img src="img/CSS.png" alt="CSS">
+                                            <img src="img/JS.png" alt="JS">
+                                            <img src="img/jquery.png" alt="jQuery">
+                                            <img src="img/Photoshop_icon.png" alt="Photoshop">
                                             <img src="img/Illustrator_icon.png" alt="Illustrator">
-                                            <img src="img/피그마.png" alt="figma">
-                                            <img src="img/github.png" alt="github">
-                                        </span>
-                                    </p>
-                                </div>
-                                <a href="#"><img src="img/logo.png" alt=""></a>
+                                            <img src="img/피그마.png" alt="Figma">
+                                            <img src="img/github.png" alt="GitHub">
 
-                            </div>
-                            <div class="subFirst_web">
-                                <a href="#">페이지 이동</a>
-                                <a href="#">피그마</a>
-                                <a href="#">포토샵</a>
-                                <a href="#">자세히 보기</a>
+                                        </p>
+
+                                    </div>
+                                    <div class="view_left">
+                                        <img src="img/PC_MOKUP.png" alt="PC_MOKUP">
+                                     <img src="img/dingo_camera.png" alt="dingo_camera">
+                                    </div>
+
+                                </div>
+                                <div class="subFirst_web">
+                                    <ul>
+                                        <li><a href="https://hanyuseok01.github.io/dingo/" target="_blank">페이지 이동</a></li>
+                                        <li><a
+                                                href="https://www.figma.com/design/AI0HuABfxt6wUbXbFw5lzE/Dingo?node-id=0-1&t=LgApMX59XfAaeQu0-1" target="_blank">피그마
+                                                보기</a></li>
+                                        <li class="down">
+                                            <a href="dingo_main.html" target="_blank">포토샵으로 보기</a>
+
+                                        </li>
+                                        <li><a href="dingo_view.html" target="_blank">자세히 보기</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="first_web">
-                                <span>Web Name</span>
-                            </div>
-                            <div class="subFirst_web">
-                                <a href="#">페이지 이동</a>
-                                <a href="#">피그마</a>
-                                <a href="#">포토샵</a>
-                                <a href="#">자세히 보기</a>
+                                <div class="view_all">
+                                    <div class="view_web">
+                                        <h3>My Publishing : Clone Coding</h3>
+                                        <p class="explanation">
+                                            "The RICHMOND"에 메인화면만 구현했습니다.
+                                            The RICHMOND은 클래식하고 고급스러운 디자인으로 우아함을 강조하며, 차분한 색상 팔레트를 사용해 품격 있는 분위기를 줍니다. 세련된 이미지 배치와 깔끔한 인터페이스로 사용자가 쉽게 정보를 탐색할 수 있도록 했습니다.
+                                        </p>
+                                        <p class="makeLogo">
+                                            <span> Logo :</span>
+                                           <img src="img/logo_rich.png" alt="logo_rich">
+
+                                        </p>
+                                        <p class="types"><span>Type :</span>PC(1920px), Tablet(768px), Mobile(430px)</p>
+                                        <p class="tools"><span>Tools :</span>
+
+                                            <img src="img/HTML.png" alt="HTML">
+                                            <img src="img/CSS.png" alt="CSS">
+                                            <img src="img/jquery.png" alt="jQuery">
+                                            <img src="img/Photoshop_icon.png" alt="Photoshop">
+                                            <img src="img/github.png" alt="GitHub">
+
+                                        </p>
+
+                                    </div>
+                                    <div class="view_left">
+                                        <img src="img/목업pc.png" alt="mockup">
+                                    </div>
+
+                                </div>
+                                <div class="subFirst_web">
+                                    <ul>
+                                        <li><a href="https://hanyuseok01.github.io/THE-RICHMOND/" target="_blank">페이지 이동</a></li>                                    
+                                        
+                                        <li><a href="richmond_view.html" target="_blank">자세히 보기</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="first_web">
-                                <span>Web Name</span>
+                                <div class="view_all">
+                                    <div class="view_web">
+                                        <h3>My Publishing : Clone Coding</h3>
+                                        <p class="explanation">
+                                            "rbfy"에 메인화면만 구현 하였습니다. rbfy의 미니멀한 디자인과 직관적인 인터페이스를 통해 사용자에게 간결하고 효율적인 경험을 제공합니다. 깔끔한 레이아웃과 심플한 아이콘들이 현대적이고 세련된 느낌입니다.
+                                        </p>
+                                        <p class="makeLogo">
+                                            <span>Logo :</span>
+                                            <img src="img/rogo_450.png" alt="rogo_450">
+                                            
+
+                                        </p>
+                                        <p class="types"><span>Type :</span>PC(1920px), Tablet(768px), Mobile(430px)</p>
+                                        <p class="tools"><span>Tools :</span>
+
+                                            <img src="img/HTML.png" alt="HTML">
+                                            <img src="img/CSS.png" alt="CSS">
+                                            <img src="img/jquery.png" alt="jQuery">
+                                            <img src="img/Photoshop_icon.png" alt="Photoshop">
+                                            <img src="img/github.png" alt="GitHub">
+
+                                        </p>
+
+                                    </div>
+                                    <div class="view_left">
+                                       <img src="img/rbfymockup.png" alt="rbfymockup">
+                                    </div>
+
+                                </div>
+                                <div class="subFirst_web">
+                                    <ul>
+                                        <li><a href="https://hanyuseok01.github.io/RBFY/" target="_blank">페이지 이동</a></li>                                 
+                                        <li><a href="rbfy_view.html">자세히 보기</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="subFirst_web">
-                                <a href="#">페이지 이동</a>
-                                <a href="#">피그마</a>
-                                <a href="#">포토샵</a>
-                                <a href="#">자세히 보기</a>
+                        </div>
+            
+                        <div class="swiper-slide">
+                            <div class="first_web">
+                                <div class="view_all">
+                                    <div class="view_web">
+                                        <h3>My Publishing : ReDesign</h3>
+                                        <p class="explanation">
+                                            'DIOR_MENS' 사이트는 전반적으로 고급스럽고 세련된 디자인을 지향하고 있어, 디올 남성 라인의 이미지와 잘 맞아떨어집니다. 미니멀하고 깔끔한 블랙과 화이트를 사용하였습니다.명품 브랜드의 정체성을 강조하고 싶었으며, 사용자에게도 차분하고 고급스러운 느낌을 주며 제작 했습니다.
+                                        </p>
+                                        <p class="makeLogo">
+                                            <span>Logo :</span>
+                                           <img src="img/logo_dior.png" alt="">
+
+                                        </p>
+                                        <p class="types"><span>Type :</span>PC(1920px), Tablet(768px), Mobile(430px)</p>
+                                        <p class="tools"><span>Tools :</span>
+
+                                            <img src="img/HTML.png" alt="HTML">
+                                            <img src="img/CSS.png" alt="CSS">
+                                            <img src="img/Photoshop_icon.png" alt="Photoshop">         
+                                            <img src="img/피그마.png" alt="Figma">
+                                            <img src="img/github.png" alt="GitHub">
+
+                                        </p>
+
+                                    </div>
+                                    <div class="view_left">
+                                        <img src="img/PC_MOKUP_Dior.png" alt="">
+                                    </div>
+
+                                </div>
+                                <div class="subFirst_web">
+                                    <ul>
+                                        <li><a href="https://hanyuseok01.github.io/DIOR_MENS/" target="_blank">페이지 이동</a></li>
+                                        <li><a
+                                                href="https://www.figma.com/design/ny3WsIAlCP0awCzC8JWXpp/DIOR?node-id=0-1&t=kveJ0UIM5fNYhw4m-1" target="_blank">피그마
+                                                보기</a></li>
+                                        <li class="down">
+                                            <a href="DIOR_PHOTO.pdf"  target="_blank">포토샵으로 보기</a>
+
+                                        </li>
+                                        <li><a href="DIOR.pdf" target="_blank">PPT로 보기</a></li>
+                                        <li><a href="DIOR_VIEW.HTML" target="_blank">자세히 보기</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -238,18 +383,30 @@
                 <div class="team_left">
                     <p class="team_name">Team Name : 유석이와 아이들</p>
                     <p class="project"> 스마트 문화앱 경복궁 디자인 </p>
-                    <p class="tools">Tools :
-                        <span>
-                            <img src="img/Photoshop_icon.png" alt="">
-                            <img src="img/Illustrator_icon.png" alt="">
-                            <img src="img/피그마.png" alt="피그마">
-                        </span>
+                    <p class="explanation">경복궁은 국내외 관광객들에게도 인기 있는 명소이므로 <br> 스마트 앱을 통해 역사적 교육 콘텐츠와 생생한 체험하고 <br> 국내, 국외
+                        관광객을 유치하는데 중점을 두었습니다. </p>
+                    <p class="tools"><span>Tools :</span>
+
+                        <img src="img/Photoshop_icon.png" alt="">
+                        <img src="img/Illustrator_icon.png" alt="">
+                        <img src="img/피그마.png" alt="피그마">
+
+                    </p>
+                    <p class="colors">
+                        <span>Colors :</span>
+                        <span class="cercle"></span>
+                        <span class="cercle01"></span>
+                        <span class="cercle02"></span>
+
+
                     </p>
                     <p class="addView">
-                        <a href="#">와이어 프레임 보기</a>
-                        <a href="#">디자인 시안 보기</a>
-                        <a href="#">PPT 보기</a>
-                        <a href="#">수정사항 & 프로젝트 후기</a>
+                        <a
+                            href="https://www.figma.com/design/g3JoUGjzAdq9BP3kMp6z6T/%EA%B2%BD%EB%B3%B5%EA%B6%81?node-id=0-1&t=CkuBASECif2LiCNj-1">와이어
+                            프레임 보기</a>
+                        <a href="https://www.figma.com/proto/EHzoYWVW8fagz3ThN3KnPI/Untitled?node-id=1-118&node-type=frame&t=dvWLIzqhkYGiO2QA-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A118">모바일 MOCKUP 보기</a>
+                        <a href="Gyeungbokgung.pdf">PPT 보기</a>
+                        <a href="smart_app_list.pdf">수정사항 & 프로젝트 후기</a>
 
                     </p>
                 </div>
@@ -264,9 +421,9 @@
         </section>
         <section class="contents">
             <div id="Contact">
-                <div class="ani" data-aos="fade-down-left">
-                    <div class='inner' >
-                        <div class="police-line" >
+                <div class="ani" data-aos="fade-down-left" data-aos-delay="500">
+                    <div class='inner'>
+                        <div class="police-line">
                             <p>
                                 Thank you for Watching &nbsp; Thank you for Watching &nbsp; Thank you for Watching
                                 &nbsp;
@@ -278,23 +435,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="ani01" data-aos="fade-down-right"
-                data-aos-duration="4000">
+                <div class="ani01" data-aos="fade-down-right" data-aos-delay="700">
                     <div class='inner01'>
                         <div class="police-line01">
                             <p>
                                 Thank you for Watching &nbsp; Thank you for Watching &nbsp; Thank you for Watching
                                 &nbsp;
                                 Thank you for Watching
-                               
+
                             </p>
-                            
+
                         </div>
                     </div>
                 </div>
-                <div class="ani02"
-                data-aos="fade-down-right"
-                data-aos-duration="2000">
+                <div class="ani02" data-aos="fade-down-right" data-aos-delay="300">
                     <div class='inner02'>
                         <div class="police-line02">
                             <p>
@@ -309,12 +463,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="ani03" data-aos="fade-down-right"
-                data-aos-duration="6000">
+                <div class="ani03" data-aos="fade-down-right" data-aos-delay="900">
                     <div class='inner03'>
                         <div class="police-line03">
                             <p>
-                                010-3525-8623 &nbsp;  Phone-Number : 010-3525-8623 &nbsp;  Phone-Number : 010-3525-8623 &nbsp;  Phone-Number : 010-3525-8623
+                                010-3525-8623 &nbsp; Phone-Number : 010-3525-8623 &nbsp; Phone-Number : 010-3525-8623
+                                &nbsp; Phone-Number : 010-3525-8623
                             </p>
                         </div>
                     </div>
@@ -322,36 +476,13 @@
             </div>
         </section>
     </div>
-    <!-- #wrap -->
-    <script>
-        AOS.init();
-    </script>
+   
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".addAccor", {
-            spaceBetween: 10,
-            centeredSlides: true,
-            /*  autoplay: {
-                 delay: 2500,
-                 disableOnInteraction: false,
-             }, */
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-
-
-
-    </script>
+  
+    <script src="js/swiper.js"></script>
 </body>
 
 </html>

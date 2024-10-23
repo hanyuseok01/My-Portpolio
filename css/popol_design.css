@@ -1,0 +1,600 @@
+@charset "utf-8";
+
+#wrap {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.popol {
+    position: absolute;
+    top: 10%;
+    right: -10%;
+    transform: rotateZ(90deg);
+    font-size: 300px;
+    font-weight: 600;
+}
+
+.title {
+    margin-bottom: 50px;
+}
+
+.title h1 {
+    font-size: 100px;
+    font-weight: 500;
+    padding: 100px;
+    letter-spacing: 20px;
+}
+
+.title h1 .my {
+    font-size: 120px;
+}
+
+.title h1 span:last-child {
+    display: inline-block;
+    transform: rotateZ(25deg);
+}
+
+.design {
+    max-width: 100%;
+}
+
+.design>.grid_num01 {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 100px;
+}
+
+.grid:nth-child(2) {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 200px;
+
+}
+
+.grid:nth-child(2)>div img:first-child {
+    width: 400px;
+}
+
+.grid:nth-child(2)>div img:nth-child(2) {
+    width: 300px;
+}
+
+.grid:nth-child(2)>div img:nth-child(3) {
+    width: 300px;
+}
+
+.grid:nth-child(2) .right {
+    position: absolute;
+    top: -1%;
+    right: 18%;
+    width: 20%;
+    height: 100%;
+    background-color: #F1AB38;
+    z-index: -1;
+}
+
+.grid:nth-child(3) {
+    max-width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000;
+    margin-bottom: 300px;
+}
+
+.grid:nth-child(3) .black_text {
+    width: 40%;
+}
+
+.grid:nth-child(3) .black_text ul {
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.grid:nth-child(3) .black_text ul li {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.grid:nth-child(3) .black_right img {
+    width: 800px;
+}
+
+/* graphic*/
+
+.graphic {
+    position: relative;
+    margin-bottom: 20%;
+}
+
+.graphic p {
+    font-size: 80px;
+}
+
+.graphic .graphic_num01 {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    transform: rotateZ(90deg);
+}
+
+.graphic .graphic_num01 img {
+    width: 800px;
+}
+
+.graphic .graphic_num02 {
+    position: absolute;
+    top: 33%;
+    right: 10%;
+}
+
+.graphic .graphic_num02 img {
+    width: 600px;
+}
+
+.graphic .graphic_num03 {
+    /*  position: absolute;
+    top: 10%;
+    right: 20%; */
+    margin-top: 60%;
+    margin-left: 20%;
+}
+
+.graphic .graphic_num03 img {
+    width: 500px;
+}
+
+.graphic .graphic_num04 {
+    position: absolute;
+    top: 15%;
+    right: 20%;
+}
+
+.graphic .graphic_num04 .graphic_text01 {
+    font-size: 18px;
+}
+
+.graphic .graphic_num05 {
+    width: 800px;
+    position: absolute;
+    top: 55%;
+    left: 10%;
+
+}
+
+.graphic .graphic_num05 .graphic_text02 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* grid all */
+.grid_all {
+    position: relative;
+    max-width: 100%;
+    height: 100vh;
+
+}
+
+.grid_all>.grid:first-child {
+    top: 0;
+    left: 40%;
+    position: absolute;
+
+}
+
+.grid_all>.grid:first-child img {
+    width: 600px;
+}
+
+.grid_all>.grid:nth-child(2) {
+    position: absolute;
+    left: 19%;
+}
+
+.grid_all>.grid:nth-child(2) img {
+    width: 400px;
+}
+
+.grid_all>.grid:nth-child(3) {
+    position: absolute;
+    right: 7.5%;
+}
+
+.grid_all>.grid:nth-child(3) img {
+    width: 400px;
+}
+
+.grid_all>.grid:nth-child(4) {
+    position: absolute;
+    top: 50%;
+    left: 19%;
+}
+
+.grid_all>.grid:nth-child(4) img {
+    width: 400px;
+}
+
+.grid_all>.grid:nth-child(5) {
+    position: absolute;
+    top: 78.5%;
+    left: 40%;
+}
+
+.grid_all>.grid:nth-child(6) {
+    position: absolute;
+    top: 92%;
+    left: 19%;
+}
+
+.grid_all>.grid:nth-child(7) {
+    position: absolute;
+    top: 28.2%;
+    left: 18.8%;
+}
+
+.grid_all>.grid>img {
+    width: 400px;
+}
+
+.left_text {
+    position: absolute;
+    top: -20%;
+    left: 10%;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.stairs {
+    position: absolute;
+    right: 7%;
+    top: 60%;
+    font-size: 28px;
+    font-weight: 500;
+    color: #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.stairs01 {
+    position: absolute;
+    right: 19.8%;
+    top: 73%;
+    font-size: 28px;
+    font-weight: 500;
+    color: #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    transform: rotateZ(90deg);
+}
+
+.stairs02 {
+    position: absolute;
+    right: 23.3%;
+    bottom: 10%;
+    font-size: 28px;
+    font-weight: 500;
+    color: #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.stairs03 {
+    position: absolute;
+    right: 22.3%;
+    bottom: -21%;
+    font-size: 28px;
+    font-weight: 500;
+    color: #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    transform: rotateZ(90deg);
+}
+
+.sub-stairs {
+    position: absolute;
+    right: 7%;
+    bottom: 0;
+    font-size: 28px;
+    font-weight: 500;
+    color: #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.sub-stairs01 {
+    position: absolute;
+    right: 8.3%;
+    bottom: -27%;
+    font-size: 28px;
+    font-weight: 500;
+    color: #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    transform: rotateZ(90deg);
+}
+
+/* illustar */
+.illustar {
+    margin-top: 35%;
+    position: relative;
+}
+
+.illustar p {
+    position: absolute;
+    top: -50px;
+    right: 10%;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.illustar .penTool {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.illustar .penTool img {
+    max-width: 400px;
+}
+
+.illustar .penTool .iller_num01 img {
+    width: 400px;
+}
+
+.illustar .penTool .iller_num02 img {
+    width: 400px;
+}
+
+.illustar .penTool .iller_num04 img {
+    width: 400px;
+}
+
+/* Guide */
+#wrap .Guide {
+    max-width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+    border: 1px solid #000;
+    text-align: center;
+    background-color: #F1AB38;
+}
+
+.Guide .line {
+    max-width: 100%;
+    height: 100%;
+    border-right: 1px solid #000;
+}
+
+.photoshop {
+    position: relative;
+    margin-top: 200px;
+}
+
+.text_arrow {
+    position: absolute;
+    top: 8%;
+    right: 30%;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text_arrow img {
+    width: 50px;
+    transform: rotateZ(180deg);
+}
+
+.text_arrow>p {
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+}
+
+.photoshop .design_mokup {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 150px;
+
+}
+
+.photoshop .design_mokup .pm {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.photoshop .design_mokup .pm img:first-child {
+    max-width: 400px;
+}
+
+.photoshop .design_mokup .pm img:nth-child(2) {
+    max-width: 240px;
+}
+
+.photoshop .pm_mokup {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.photoshop .pm_mokup>div {
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.photoshop .pm_mokup img:last-child {
+    position: absolute;
+    top: 25%;
+    right: -20%;
+    transform: rotateZ(15deg);
+}
+
+
+.sub_design_mokup>.text_arrow {
+    position: absolute;
+    top: 49%;
+    right: 30%;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sub_design_mokup .text_arrow img {
+    width: 50px;
+    transform: rotateZ(180deg);
+}
+
+.sub_design_mokup .text_arrow>p {
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+}
+
+.sub_design_mokup {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+
+}
+
+.sub_design_mokup_left {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.sub_design_mokup_left img:first-child {
+    width: 400px;
+}
+
+.sub_design_mokup_left img:nth-child(2) {
+    width: 240px;
+}
+
+.sub_design_mokup_right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.sub_design_mokup_right>div {
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.sub_design_mokup_right img:last-child {
+    position: absolute;
+    top: 25%;
+    right: -20%;
+    transform: rotateZ(15deg);
+}
+
+/* sofa-mockup */
+.sofa_mockup {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+
+}
+
+.sofa_mockup>.text_arrow {
+    position: absolute;
+    top: 10%;
+    right: 48%;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sofa_mockup >.text_arrow > .only_right {
+    width: 50px;
+    transform: rotateZ(360deg);
+}
+
+.sofa_mockup .text_arrow>p {
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+}
+
+.sofa_mockup_left {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.sofa_mockup_left img {}
+
+.sofa_mockup_right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.sofa_mockup_left>div {
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.sofa_mockup_right>img {
+    width: 600px;
+}
+
+/* Guide01 */
+#wrap .Guide01 {
+    max-width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+    border: 1px solid #000;
+    text-align: center;
+    background-color: #4CCCFB;
+}
+
+.Guide01>.line {
+    max-width: 100%;
+    height: 100%;
+    border-right: 1px solid #000;
+}
