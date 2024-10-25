@@ -266,7 +266,20 @@ header .gnb {
     text-align: center;
 }
 .about_me li .scroll_skill li img {
-    width: 30px;
+    width: 50px;
+}
+.about_me li .scroll_skill li:first-child img {
+    width: 35px;
+    height: 50px;
+}
+.about_me li .scroll_skill li:nth-child(2) img {
+    width: 35px;
+    height: 50px;
+
+}
+.about_me li .scroll_skill li:nth-child(3) img {
+    width: 35px;
+    height: 50px;
 }
 /* porpolio */
 .contents #popol {
@@ -573,6 +586,22 @@ header .gnb {
     font-weight: 400;
     color: #fff;
 }
+.makeMyLogo span {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    margin-right: 10px;
+}
+.makeMyLogo img:nth-child(2) {
+    margin: 5px;
+    width: 60px;
+    height: 30px;
+}
+.makeMyLogo img:nth-child(3) {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+}
 .makeLogo span {
     font-size: 18px;
     font-weight: 400;
@@ -595,20 +624,38 @@ header .gnb {
     margin: 5px;
     max-width: 30px;
 }
-
 .tools img:nth-child(2) {
-    width: 20px;
-}
-.tools img:nth-child(3) {
-    width: 20px;
-}
-.tools img:nth-child(4) {
-    width: 20px;
-}
-.tools img:nth-child(5) {
     width: 25px;
 }
+.tools img:nth-child(3) {
+    width: 25px;
+}
+.tools img:nth-child(4) {
+    width: 25px;
+}
+.tools img:nth-child(5) {
+    width: 30px;
+}
 
+.tools01 img {
+    margin: 5px;
+    max-width: 30px;
+}
+.tools01 img:nth-child(2) {
+    width: 25px;
+}
+.tools01 img:nth-child(3) {
+    width: 25px;
+}
+.tools01 img:nth-child(4) {
+    width: 30px;
+}
+.tools01 img:nth-child(5) {
+    width: 30px;
+}
+.tools01 img:nth-child(6) {
+    width: 30px;
+}
 
 .subFirst_web {
     width: 50%;
